@@ -1,0 +1,29 @@
+  .photowrap{
+      width:50%;
+      height: 200px;
+    }
+    .photowrap-xs{
+      position: absolute;
+      top:0; 
+      left:0;
+      width:100%;
+      height: 200px;
+    }
+    .photowrap2 {
+      width:25%;
+      height:200px;
+      overflow: hidden;
+    	position: relative;
+    }
+
+    #cosplay-banner .photowrap2 img {
+    	left: 50%; 
+    	top: 50%;
+    	-webkit-transform: translate(-50%, -50%);
+    	-ms-transform: translate(-50%, -50%);
+    	transform: translate(-50%, -50%);
+    	position: absolute;
+ max-width: 150%;
+min-height: 100%;
+margin: 0px;
+    }

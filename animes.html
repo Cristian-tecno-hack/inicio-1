@@ -1,631 +1,166 @@
-<!--SOLO ESTA PAGINA LLE BUSCADOR AGREGAR LOS CAMPOS CORRESPONDIENTES-->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AnimeOtakuOnline-Animes</title>
-
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="principal.css">
-    <link rel="stylesheet" href="blog.css">
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeOtakuOnline|Animes</title>
+    <link rel="stylesheet" type="text/css" href="css-animes/estilos.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-
-    <!--Header - menu-->
+    <div class="social-bar">
+        <a href="https://www.facebook.com/groups/332216944577880" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UC_abgLG-yd5sXZtAeCcZIYw?sub_confirmation=1" class="icon icon-youtube" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UCMZRF5NqNebKqKJVccJr6kw?sub_confirmation=1" class="icon icon-youtube" target="_blank"></a>
+    </div>
     <header>
-
-        <div class="header-content">
-
-            <div class="logo">
-                <h1>AnimeOtaku<b>Online</b></h1>
+        <div class="contenedor">
+            <div id="marca">
+                <h1><span class="resaltado"></span>AnimeOtakuOnline</span></h1>
             </div>
-
-            <div class="menu" id="show-menu">
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html"> <i class="fas fa-home"></i> Inicio</a></li>
-                        <li class="menu-selected"><a href="animes.html" class="text-menu-selected"> <i class="fas fa-file-alt"></i>Animes</a></li>
-                        <li><a href="emision/emision.html"> <i class="fas fa-file-alt"></i>En Emision</a></li>
-                        <li><a href="proximamente.html"> <i class="fas fa-file-alt"></i>Proximamente</a></li>
-                        <li><a href="noticias.html"> <i class="fas fa-file-alt"></i>Noticias</a></li>
-                        <!--<li><a href="tops.html"> <i class="fas fa-file-alt"></i>Series</a></li>
-                        <li><a href="raps.html"> <i class="fas fa-music"></i>Peliculas</a></li>
-                        <li><a href="ovas.html"> <i class="fas fa-file-alt"></i>Ovas</a></li>
-                        <li><a href="noticias.html"> <i class="fas fa-file-alt"></i>Noticias</a></li>
-                        <li><a href="contacto.html"> <i class="fas fa-headset"></i> Contacto</a></li>-->
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div id="ctn-icon-search">
-                <i class="fas fa-search" id="icon-search"></i>
-            </div>
-
+            <nav>
+                <ul>
+                    <li class="actual"><a href="animes.html">Inicio</a></li>
+                    <li><a href="en emision.html">En emision</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="pelicula.htmls">Peliculas</a></li>
+                    <li><a href="ovas.html">Ovas</a></li>
+                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                    <li><a href="Tops.html">Tops</a></li>
+                    <li><a href="buscar.html">Buscar</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-
     </header>
 
 
-    <div id="ctn-bars-search">
-        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
-    </div>
-
-    <ul id="box-search">
-        <li><a href="#"><i class="fas fa-search"></i>TOP 5 MEJORES ANIMES SOBRE LA TERCERA GUERRA MUNDIAL</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 20 MEJORES ANIMES DE ACCION</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAPS DE DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>UN RAP CON FRASES ANIME</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE WENDY MARVELL</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 6 ANIMES SIMILARES A NAMBAKA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME PRIMAVERA 2021</a></li>
-        <!--a partir de aqui abajo son todos los filtros comoletos de todos los posts estrenos anime-->
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME ENERO 2021</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME DICIEMBRE 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>16 NUEVAS SERIES DE ANIME EN NETFLIX 2021</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>LOS ANIMES MAS ESPERADOS PARA ESTE 2021</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME NOVIEMBRE 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME OTOÑO 2020 ACTUALIZADA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME NETFLIX SEPTIEMBRE 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME AGOSTO 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME EN NETFLIX AGOSTO 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>LAS PELICULAS MAS ESPERADAS PARA ESTE 2021</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME VERANO 2020 ACTUALIZADA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ANIMES QUE SE ESTRENARAN ESTE 2021</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME OTOÑO 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME VERANO 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME MAYO 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 30 MEJORES PELICULAS ANIME</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>ESTRENOS ANIME ABRIL 2020</a></li>
-        <!--a partir de aqui abajo son todos los filtros comoletos de todos los posts tops anime-->
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE KIRISAKI CHITOGE|NISEKOI</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE AMOR EN EL ANIME</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 5 ANIMES QUE SALVARON EL 2020</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 14 ANIMES PARA VER ESTE 14 DE FEBRERO</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>10 COSAS QUE NO SABIAS DE YUUKI ASUNA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>6 ANIMES SIMILARES A MAHOU SHOUJO SITE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE MANA TAKAMIYA|DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES PARA VER EN NAVIDAD</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE TOBIICHI ORIGAMI|DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE YOSHINO HIMEKAWA|DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE TOKISAKI KURUMI|DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE ITSUKA KOTORI|DATE A LIVE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>REVIEW DE HIBIKE EUPHONIUM</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>REVIEW DE NAKITAI WATASHI WA NEKO O KABURU</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>REVIEW DE 5 CENTIMETROS POR SEGUNDO</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 9 MEJORES ANIMES SOBRE LA INDUSTRIA DEL ANIME</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 4 MEJORES JUEGOS ANIMES PARA JUGAR EN NOVIEMBRE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES PARA VER CUANDO ESTAS ABURRIDO</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 5 MEJORES ANIMES PARA VER EN HALLOWEEN</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE YATOGAMI TOHKA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES DE INEXPERIENCIA AMOROSA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES SOBRE VIDEOJUEGOS</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES DE COCINA/COMIDA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES DE SOLO CHICAS</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>RAP DE DARKNESS|KONO SUBARASHII SEKAI NI SHUKUFUKU WO</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 10 MEJORES ANIMES QUE CURAN LA DEPRESION</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 10 MEJORES ANIMES DEL ESTUDIO GHIBLI</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 30 MEJORES ANIMES CORTOS</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS MEJORES ANIMES DE ROMANCE/a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 10 MEJORES ANIMES DEL ESTUDIO KYOTO ANIMATION</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>MI LISTA DE ANIMES RECOMENDADOS 2NDA PARTE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>MI LISTA DE ANIMES RECOMENDADOS 1ERA PARTE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 10 MEJORES ANIMES DEL ESTUDIO UFOTABLE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 15 MEJORES ANIMES YURI</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 10 MEJORES ANIMES DE VAMPIROS Y ROMANCE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 10 MEJORES ANIMES DE COMEDIA ESCOLAR</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 20 MEJORES ANIMES ISEKAI</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP 5 ANIMES QUE TIENES QUE VER SI ERES O NO OTAKU</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 7 MEJORES ANIMES DE FATE</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 8 MEJORES ANIMES MAS TRISTES</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 19 MEJORES ANIMES DE TERROR</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>25 ANIMES QUE NO PUEDES DEJAR DE VER</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 15 MEJORES ANIMES DE COMEDIA</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>SERIES ANIME EN NETFLIX</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>TOP LOS 20 MEJORES ANIMES DEL 2019</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <!--proximemente-->
-        
-        <!--<li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>#</a></li>-->
-    </ul>
-
-    <div id="cover-ctn-search"></div>
-
-
-    <!--Portada-->
-
-    <div class="container-all" id="move-content">
-
-    <div class="container-post">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>ANIMES</h2>
-        <div class="posts">
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href="animes/Princess Connect! ReDive Season 2/Princess Connect! ReDive Season 2.html"><div class="ctn-img"><img src="emision/LUNES/01.jpg" alt=""></div></a>
-                <h2>Princess Connect! Re:Dive Season 2</h2>
-                <span>11 DE ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--49-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/LUNES/02.jpg" alt=""></div></a>
-                <h2>Sabikui Bisco</h2>
-                <span>11 DE ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--50-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href="animes/Gensou Sangokushi Tengen Reishinki/Gensou Sangokushi Tengen Reishinki.html"><div class="ctn-img"><img src="emision/LUNES/03.jpg" alt=""></div></a>
-                <h2>Gensou Sangokushi: Tengen Reishinki</h2>
-                <span>11 DE ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--51-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/LUNES/04.jpg" alt=""></div></a>
-                <h2>Tribe Nine</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
-            <div class="post" data-category="ESTRENO">
-
-                <a href=""><div class="ctn-img"><img src="emision/" alt=""></div></a>
-                <h2>#</h2>
-                <span>10 ENERO DEL 2022</span>
-                <ul class="ctn-tag">
-                    <li style="background-color: red; color: white;">SERIE</li>
-                    <!--52-->
-                </ul>
-                <!--<a href="#"><button>Descargar</button></a>-->
-
-            </div>
-
+    <section id="cabecera">
+        <div class="contenedor">
+            <h1>ENCUENTRA EL ANIME QUE TE PUEDA INTERESAR</h1>
+            <p>no sabes que ver o quieres saber que animes se van a estrenar entonces esta pagina es para tí
+                <!--**IMPORTANTE POR EL MOMENTO ESTA PAGINA SE ENCUENTRA EN PROCESO ASI QUE PUEDE HABER CAMBIOS TOTALES EN LA PAGINA Y SE ESTARÄ ACTUALIZANDO A FRECUENTEMENTE -->**
+            </p>
+            <p></p>
         </div>
+    </section>
 
-    </div>
-
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://animeotakuonline.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-<script><a href="https://disqus.com/?ref_noscript"></a></script>
-<script id="dsq-count-scr" src="//animeotakuonline.disqus.com/count.js" async></script>
-
-    <!--Boton de ir hacia arriba-->
-    <div id="button-up">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-
-
-
-    <div class="container-footer">	
-
-        <footer>
-            <div class="logo-footer">
-                <img src="img/icon.jfif" alt="" style="border-radius: 50%;">
+    <section id="boletin">
+        <div class="contenedor">
+            <h1>suscribete a nuesta pagina</h1>
+            <form>
+                <input type="email" name="email" placeholder="Ingrese el email...">
+                <button type="submit" class="boton1">Suscribete</button>
+            </form>
+        </div>
+    </section>
+    <h2>ULTIMOS AGREGADO</h2>
+    <section id="cajas">
+        <div class="contenedor">
+            <div class="caja">
+                <br>
+                <a href="estrenos_anime_enero_2021.html"><img src="img/PSX_20201228_133419.jpg" height="200" alt="100"></a>
+                <h3>ESTRENOS ANIME ENERO 2021</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+            <div class="caja">
+                <br>
+                <a href="animes_para_ver_en_navidad.html"></a><img src="img/animenavidad.jpg" height="200" alt="100">
+                <h3>TOP 10 ANIMES PARA VER EN NAVIDAD</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
             </div>
 
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-youtube icon-redes-footer"></i></a>
-                <!--<a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>-->
+
+
+            <div class="caja">
+                <!--<br>-->
+                <!--<img src="img/img.png" height="200" alt="100">-->
+                <!--<h3>TOP 10 ANIMES PARA VER EN NAVIDAD</h3>-->
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
             </div>
 
-            <hr>
-            <h4>© 2021 AnimeotakuOnline - Todos los Derechos Reservados</h4>
+            <div class="caja">
+                <!--<br>-->
+                <a href="estrenos_anime_diciembre_2020.html"></a><img src="img/PSX_20201122_072804.jpg" height="200" alt="100">
+                <h3>ESTRENOS ANIME DICIEMBRE 2020</h3>
+               <!-- <p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
 
-        </footer>
+            
+            <div class="caja">
+                <!--<br>-->
+                <!--<img src="img/img.png" height="200" alt="100">-->
+                <!--<h3>TOP 10 ANIMES PARA VER EN NAVIDAD</h3>-->
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
 
-    </div>
 
-</div>
+            <div class="caja">
+                <br>
+                <a href="estrenos_anime_noviembre_2020.html"></a><img src="img/PSX_20201104_152449.jpg" height="200" alt="100">
+                <h3>ESTRENOS ANIME NOVIEMBRE 2020</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
 
-    <script src="js/script.js"></script>
+            <div class="caja">
+                <br>
+                <a href="animes_mas_esperados_para_el_2021.html"></a><img src="img/PSX_20201107_223401.jpg" height="200" alt="100">
+                <h3>LOS ANIMES MAS ESPERADOS PARA ESTE 2021</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+            <div class="caja">
+                <br>
+                <a href="16_nuevas_series_netflix_2021.html"></a><img src="img/animenetflix.jpg" height="200" alt="100">
+                <h3>16 NUEVAS SERIES EN NETFLIX</h3>
+               <!-- <p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+
+            
+            <div class="caja">
+                <!--<br>-->
+                <!--<img src="img/img.png" height="200" alt="100">-->
+                <!--<h3>TOP 10 ANIMES PARA VER EN NAVIDAD</h3>-->
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+            
+            <div class="caja">
+                <!--<br>-->
+                <!--<img src="img/img.png" height="200" alt="100">-->
+                <!--<h3>TOP 10 ANIMES PARA VER EN NAVIDAD</h3>-->
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+
+            <div class="caja">
+                <br>
+                <a href="animes_sobre_la_industria_del_anime.html"></a><img src="img/PSX_20201115_072547.jpg" height="200" alt="100">
+                <h3>TOP LOS 9 MEJORES ANIMES SOBRE LA INDUSTRA DEL ANIME</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+            <!--<div class="caja">
+                <br>
+                <img src="img/img.png" height="200" alt="100">
+                <h3>texto</h3>
+                <p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>
+            </div>
+            <div class="caja">
+                <br>
+                <img src="img/img.png" height="200" alt="100">
+                <h3>texto</h3>
+                <p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>
+            </div>-->
+
+            <div class="caja">
+                <br>
+                <a href="https://www.youtube.com/watch?v=1MgQfBrdevc&t=31s" target="_blank"><img src="img/PSX_20201221_160402.jpg" height="200" alt="100"></a>
+                <h3>RAP DE MANA TAKAMIYA|DATE A LIVE</h3>
+                <!--<p>kjhkjlkjlkjlkjlkjlkjlkhhjhl</p>-->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <li><a href="raps.html"><p>puedes escuchar mis raps anime aquí</p></a></li>
+        <p>AnimeOtakuOnline, Copyright &copy; 2021</p>
+            <!-- Follow -->
+    </footer> 
 </body>
 </html>
