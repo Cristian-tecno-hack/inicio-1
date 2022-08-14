@@ -10,7 +10,13 @@
 }
 
 body{
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
+    background: #333333;
+	background: -webkit-linear-gradient(to bottom, hsla(34, 13%, 11%, 0.80), hsla(6, 100%, 28%, 0.80)),url(https://previewengine-accl.zohoexternal.com/image/WD/okcbldbfa242d84414849be6b4bc6b6895865?width=2046&height=1536);
+	background: linear-gradient(to bottom, hsla(34, 13%, 11%, 0.80), hsla(6, 100%, 28%, 0.80)),url(https://previewengine-accl.zohoexternal.com/image/WD/okcbldbfa242d84414849be6b4bc6b6895865?width=2046&height=1536);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header{
@@ -19,7 +25,7 @@ header{
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: black;/*#fff*/
     box-shadow: 0 4px 25px -22px black;
     z-index: 10;
 }
@@ -218,7 +224,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white;/*white*/
     border-radius: 50%;
     font-size: 20px;
     position: fixed;
@@ -242,7 +248,7 @@ header{
 .container-footer{
     width: 100%;
     padding: 40px 0;
-    background: #fff;
+    background: black;/*#fff*/
     margin-top: 40px;
 }
 
